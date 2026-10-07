@@ -1,0 +1,11 @@
+{
+  "run": "medical-bill",
+  "tool": "Claude (claude -p, tools off, plain assistant system prompt)",
+  "started_utc": "2026-10-07T09:49:55Z",
+  "duration_ms": 15480,
+  "is_error": false,
+  "session_id": "497cce11-0644-5392-9947-b5e257f36e05",
+  "prompt_file": "prompt-medical-bill.txt",
+  "output_file": "output-medical-bill.md",
+  "edited": false
+}

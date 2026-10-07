@@ -1,0 +1,29 @@
+First: I removed my name, address, and any account numbers from this lease.
+
+This is my Maryland apartment lease. In plain English, list:
+1. Every fee or charge besides rent, with the amount.
+2. Every deadline or notice period (rent due date, late fee timing, renewal, move-out notice).
+3. What happens if I end the lease early.
+4. Who pays which utilities and who handles repairs.
+5. The security deposit amount and any rules about getting it back.
+For each item, quote the exact lease sentence and give the section number.
+Then list anything you could not find. Do not give legal advice. Mark items I should double-check against the Maryland Tenants' Bill of Rights.
+
+SAMPLE DOCUMENT. FICTIONAL. Made for a demo. Not a real lease, landlord, or tenant.
+
+RESIDENTIAL LEASE AGREEMENT (Montgomery County, Maryland)
+Landlord: Example Property Group LLC   Tenant: [REDACTED]   Premises: [REDACTED], Unit [REDACTED]
+
+1. TERM. This Lease begins November 1, 2026 and ends October 31, 2027.
+2. RENT. Monthly rent is $1,850.00, due on the 1st day of each month.
+3. LATE FEE. If rent is not received by the 5th day of the month, Tenant shall pay a late fee of 5% of the monthly rent.
+4. SECURITY DEPOSIT. Tenant has paid a security deposit of $1,850.00. Landlord will return the deposit, less any lawful deductions, as required by Maryland law.
+5. UTILITIES. Tenant pays electricity, gas, and internet. Landlord pays water and trash. A monthly common-area utility fee of $35.00 is charged with rent.
+6. AMENITY AND ADMIN FEES. Tenant shall pay a one-time administrative fee of $150.00 at signing and a monthly amenity fee of $25.00.
+7. PARKING. One reserved parking space is available for $60.00 per month.
+8. PETS. Pets require written approval, a non-refundable pet fee of $300.00, and monthly pet rent of $40.00.
+9. RENEWAL. This Lease converts to month-to-month unless either party gives written notice at least 60 days before the end of the term. Month-to-month rent will be the current rent plus $150.00.
+10. EARLY TERMINATION. Tenant may end this Lease early by giving 60 days written notice and paying an early termination fee equal to two months' rent.
+11. REPAIRS. Tenant shall report needed repairs in writing through the resident portal. Tenant is responsible for repairs under $100.00 caused by ordinary use.
+12. MOVE-OUT. Tenant shall give written notice of move-out at least 60 days before vacating. Carpet cleaning of $175.00 will be deducted from the security deposit at move-out.
+13. RETURNED PAYMENTS. Any returned payment will be charged a fee of $35.00.

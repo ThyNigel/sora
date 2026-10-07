@@ -1,0 +1,23 @@
+SAMPLE DOCUMENT. FICTIONAL. Made for a demo. Not a real patient or provider.
+
+EXAMPLE REGIONAL MEDICAL CENTER
+DETAILED ITEMIZED STATEMENT
+Patient: [REDACTED]   Account #: [REDACTED]   DOB: [REDACTED]
+Service dates: 08/14/2026 - 08/14/2026   Visit type: Emergency Department
+
+DATE        REV  CPT/HCPCS  DESCRIPTION                              QTY   CHARGE
+08/14/2026  0450 99284      ED VISIT LEVEL 4                           1   1,240.00
+08/14/2026  0300 85025      CBC W/ AUTO DIFF                           1      68.00
+08/14/2026  0300 80053      COMPREHENSIVE METABOLIC PANEL              1     112.00
+08/14/2026  0300 85025      CBC W/ AUTO DIFF                           1      68.00
+08/14/2026  0320 71046      X-RAY CHEST 2 VIEWS                        1     310.00
+08/14/2026  0250 J1885      KETOROLAC INJ PER 15MG                     4      84.00
+08/14/2026  0636 J7030      NORMAL SALINE 1000ML                       1      45.00
+08/14/2026  0270 99070      SUPPLIES MISC                              1     196.00
+08/14/2026  0260 96374      IV PUSH SINGLE/INITIAL DRUG                1     265.00
+08/14/2026  0260 96374      IV PUSH SINGLE/INITIAL DRUG                1     265.00
+
+                                              TOTAL CHARGES:          2,753.00
+                                              INSURANCE PAYMENTS:         0.00
+                                              ADJUSTMENTS:                0.00
+                                              PATIENT BALANCE DUE:    2,753.00

@@ -1,0 +1,375 @@
+{
+  "id": "2026-10-07-money-moves",
+  "pillar": "money-moves",
+  "series": "MONEY MOVES",
+  "seed": 7,
+  "slides": [
+    {
+      "id": "hook",
+      "type": "hook",
+      "motion": true,
+      "duration": 5,
+      "seqDuration": 3.6,
+      "kicker": "THE PEACE STACK",
+      "label": "7 MOVES. EVERY SOURCE CHECKED.",
+      "lines": [
+        "7 MONEY",
+        "MOVES",
+        "NOBODY",
+        "BOTHERED",
+        "TO TELL YOU"
+      ],
+      "accent": "7",
+      "sub": "Most take under 10 minutes. All free. Swipe.",
+      "claims": []
+    },
+    {
+      "id": "four-files",
+      "type": "benchmark",
+      "motion": true,
+      "duration": 6,
+      "seqDuration": 5.2,
+      "kicker": "MOVE 01",
+      "label": "FILES YOU NEVER FROZE",
+      "figure": "4",
+      "unit": "FILES",
+      "claims": [
+        "Credit files most people never freeze.",
+        "Not Equifax. Not Experian. Not TransUnion.",
+        "Freezing each one costs **$0**."
+      ],
+      "claimLines": 2,
+      "body": "ChexSystems. NCTUE. Innovis. LexisNexis. One of them tracks every checking account you open.",
+      "claimIds": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C4a"
+      ]
+    },
+    {
+      "id": "freeze",
+      "type": "tip",
+      "motion": false,
+      "duration": 5,
+      "seqDuration": 4.4,
+      "kicker": "MOVE 01",
+      "title": [
+        "FREEZE THE",
+        "OTHER FOUR"
+      ],
+      "accent": "FOUR",
+      "action": "Start with one tonight. Save the PIN they give you. Lift it before you open a new bank or phone account.",
+      "sourceLine": "4 OFFICIAL PAGES. CHECKED 07 OCT 2026",
+      "proof": {
+        "kind": "quotes",
+        "domain": "Their own freeze pages",
+        "tag": "Quoted",
+        "quotes": [
+          {
+            "who": "chexsystems.com",
+            "text": "ChexSystems **does not charge a fee** for placing or lifting a security freeze"
+          },
+          {
+            "who": "nctue.com",
+            "text": "**A free security freeze** can prevent access to your NCTUE credit report"
+          },
+          {
+            "who": "innovis.com",
+            "text": "**There is no charge** for the addition, temporary lift, or removal of a Security Freeze."
+          },
+          {
+            "who": "consumer.risk.lexisnexis.com",
+            "text": "LexisNexis Risk Solutions **does not charge a fee** to apply, lift or remove a security freeze"
+          }
+        ],
+        "capture": [
+          {
+            "url": "https://www.chexsystems.com/security-freeze/information",
+            "find": "does not charge a fee"
+          },
+          {
+            "url": "https://nctue.com/consumer/",
+            "find": "free security freeze"
+          },
+          {
+            "url": "https://www.innovis.com/personal/securityFreeze",
+            "find": "There is no charge"
+          },
+          {
+            "url": "https://consumer.risk.lexisnexis.com/freeze",
+            "find": "does not charge a fee"
+          }
+        ]
+      },
+      "claimIds": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "id": "ip-pin",
+      "type": "tip",
+      "motion": false,
+      "duration": 5,
+      "seqDuration": 4.4,
+      "kicker": "MOVE 02",
+      "title": [
+        "LOCK YOUR TAXES",
+        "WITH A 6-DIGIT PIN"
+      ],
+      "accent": "6-DIGIT",
+      "action": "IRS.gov/IPPIN. Anyone with an SSN can get one. The online tool closes *mid-November*.",
+      "sourceLine": "IRS.GOV. CHECKED 07 OCT 2026",
+      "proof": {
+        "kind": "quotes",
+        "domain": "irs.gov",
+        "tag": "Quoted",
+        "quotes": [
+          {
+            "who": "Get an IP PIN",
+            "text": "a six-digit number that **prevents someone else from filing a tax return** using your Social Security number"
+          },
+          {
+            "who": "IP PIN FAQ",
+            "text": "Get my IP PIN, which is available from **mid-January through mid-November**."
+          }
+        ],
+        "capture": [
+          {
+            "url": "https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin",
+            "find": "six-digit number"
+          }
+        ]
+      },
+      "claimIds": [
+        "C5",
+        "C5a",
+        "C6"
+      ]
+    },
+    {
+      "id": "number-lock",
+      "type": "tip",
+      "motion": false,
+      "duration": 5,
+      "seqDuration": 4.4,
+      "kicker": "MOVE 03",
+      "title": [
+        "LOCK YOUR",
+        "PHONE NUMBER"
+      ],
+      "accent": "LOCK",
+      "action": "A SIM swap sends your bank texts to a scammer. All 3 big carriers have a *free* lock in the app.",
+      "sourceLine": "3 CARRIER PAGES. CHECKED 07 OCT 2026",
+      "proof": {
+        "kind": "quotes",
+        "domain": "Carrier help pages",
+        "tag": "Quoted",
+        "quotes": [
+          {
+            "who": "verizon.com",
+            "text": "You can set up Number Lock **for free** to protect your mobile number from an unauthorized move."
+          },
+          {
+            "who": "t-mobile.com",
+            "text": "SIM Protection is **a free feature** offered to all T-Mobile Postpaid customers."
+          },
+          {
+            "who": "att.com",
+            "text": "AT&T has introduced **a free feature** for extra protection from unauthorized changes to your AT&T wireless account."
+          }
+        ],
+        "foot": "Turn the lock off before you upgrade or switch carriers.",
+        "capture": [
+          {
+            "url": "https://www.verizon.com/support/knowledge-base-309293/",
+            "find": "for free"
+          },
+          {
+            "url": "https://www.t-mobile.com/support/plans-features/sim-protection/",
+            "find": "free feature"
+          },
+          {
+            "url": "https://about.att.com/story/2025/wireless-account-lock.html",
+            "find": "free feature"
+          }
+        ]
+      },
+      "claimIds": [
+        "C8",
+        "C9",
+        "C10",
+        "C11"
+      ]
+    },
+    {
+      "id": "md-medical-debt",
+      "type": "tip",
+      "motion": false,
+      "duration": 5,
+      "seqDuration": 4.4,
+      "kicker": "MOVE 04  MARYLAND",
+      "title": [
+        "MD BANNED MEDICAL",
+        "DEBT FROM YOUR",
+        "CREDIT REPORT"
+      ],
+      "accent": "BANNED",
+      "action": "Since Oct 1, 2025. Pull your free weekly report at AnnualCreditReport.com. See a medical collection? *Dispute it.*",
+      "sourceLine": "LABOR.MARYLAND.GOV. CHECKED 07 OCT 2026",
+      "proof": {
+        "kind": "quotes",
+        "domain": "labor.maryland.gov",
+        "tag": "Quoted",
+        "quotes": [
+          {
+            "who": "MD Office of Financial Regulation",
+            "text": "Neither a debt collector, nor anyone who provides medical services, **may report medical debt** to a consumer reporting agency."
+          }
+        ],
+        "foot": "Not fixed? MD OFR: 410-230-6077",
+        "capture": [
+          {
+            "url": "https://labor.maryland.gov/finance/advisories/advisory-ind-collectionmedicaldebt.shtml",
+            "find": "HB1020"
+          }
+        ]
+      },
+      "claimIds": [
+        "C12",
+        "C13",
+        "C16",
+        "C17"
+      ]
+    },
+    {
+      "id": "ai-medical-bill",
+      "type": "tip",
+      "motion": true,
+      "duration": 6,
+      "seqDuration": 5.4,
+      "kicker": "MOVE 05  AI",
+      "title": [
+        "MAKE AI AUDIT",
+        "YOUR HOSPITAL BILL"
+      ],
+      "accent": "AI",
+      "action": "Ask for the *itemized* bill. Black out your name and account number. Paste it in.",
+      "sourceLine": "REAL RUN ON A SAMPLE BILL. 07 OCT 2026",
+      "proof": {
+        "kind": "ai",
+        "tool": "Claude",
+        "tag": "Real output",
+        "prompt": "Table every line. Flag repeats with the same date and code. Check the total. Write questions for billing.",
+        "output": [
+          "85025 (CBC) | 2 and 4 | $68.00",
+          "96374 (IV push, initial drug) | 9 and 10 | $265.00",
+          "!The total does not match. The bill's total is $100.00 more than the lines add up to."
+        ],
+        "foot": "Sample bill made for this test. Output trimmed, not edited.",
+        "runFile": "assets/ai-runs/output-medical-bill.md"
+      },
+      "claimIds": [
+        "C18",
+        "C18a",
+        "AI-1"
+      ]
+    },
+    {
+      "id": "ai-subscriptions",
+      "type": "tip",
+      "motion": true,
+      "duration": 6,
+      "seqDuration": 5.4,
+      "kicker": "MOVE 06  AI",
+      "title": [
+        "MAKE AI FIND EVERY",
+        "SUBSCRIPTION"
+      ],
+      "accent": "AI",
+      "action": "Download 90 days of transactions as a CSV. Delete the account numbers. Ask for the yearly cost.",
+      "sourceLine": "REAL RUN ON A SAMPLE CSV. 07 OCT 2026",
+      "proof": {
+        "kind": "ai",
+        "tool": "Claude",
+        "tag": "Real output",
+        "prompt": "Find every charge that repeats. Estimate the yearly cost. Sort highest first.",
+        "output": [
+          "BEANBOX COFFEE CLUB WKLY | Weekly | $442.00",
+          "PXE*PHOTOEDIT PRO | Monthly | $155.88",
+          "PHOTOEDIT PRO appears only twice (no July 18 charge).",
+          "!Total | $2,337.28"
+        ],
+        "foot": "Sample file made for this test. Output trimmed, not edited.",
+        "runFile": "assets/ai-runs/output-subscriptions.md"
+      },
+      "claimIds": [
+        "C19",
+        "C20",
+        "AI-2"
+      ]
+    },
+    {
+      "id": "ai-lease",
+      "type": "tip",
+      "motion": true,
+      "duration": 6,
+      "seqDuration": 5.4,
+      "kicker": "MOVE 07  AI",
+      "title": [
+        "MAKE AI READ",
+        "YOUR LEASE"
+      ],
+      "accent": "AI",
+      "action": "Every fee and deadline, with the exact sentence. Maryland renters: new *Tenants' Bill of Rights* since Oct 1, 2026.",
+      "sourceLine": "REAL RUN ON A SAMPLE LEASE. 07 OCT 2026",
+      "proof": {
+        "kind": "ai",
+        "tool": "Claude",
+        "tag": "Real output",
+        "prompt": "List every fee and deadline. Quote the exact lease sentence and section for each.",
+        "output": [
+          "Early termination fee | 2 months' rent (about $3,700) | §10",
+          "Carpet cleaning | $175.00, deducted from deposit | §12",
+          "!Recurring monthly total, before optional items: $1,850 + $35 + $25 = $1,910"
+        ],
+        "foot": "Sample lease made for this test. Output trimmed, not edited.",
+        "runFile": "assets/ai-runs/output-lease.md"
+      },
+      "claimIds": [
+        "C24",
+        "AI-3"
+      ]
+    },
+    {
+      "id": "close",
+      "type": "close",
+      "motion": false,
+      "duration": 5,
+      "seqDuration": 4.6,
+      "kicker": "THE END",
+      "lines": [
+        "SAVE THIS.",
+        "TEXT IT TO",
+        "ONE FRIEND."
+      ],
+      "accent": "SAVE",
+      "sub": "Pick one move tonight. The rest can wait till the weekend.",
+      "index": [
+        "Freeze the other four",
+        "IRS IP PIN",
+        "Carrier number lock",
+        "MD medical debt check",
+        "AI bill audit",
+        "AI subscription sweep",
+        "AI lease read"
+      ],
+      "nfa": "Not financial or legal advice. Just stuff I checked.",
+      "claims": []
+    }
+  ]
+}

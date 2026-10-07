@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>motion-carousel slide</title>
+<link rel="stylesheet" href="styles.css">
+<script src="runtime.js"></script>
+<script src="templates.js"></script>
+</head>
+<body>
+<script>
+  // Renderer injects window.__MC_INPUT = { data, slideId, format, mode }.
+  // Open by hand with ?carousel=<path to carousel.json>&slide=<id>&format=ig|tt&mode=loop|still|seq
+  async function boot() {
+    let input = window.__MC_INPUT;
+    if (!input) {
+      const q = new URLSearchParams(location.search);
+      const data = await (await fetch(q.get('carousel'))).json();
+      input = { data, slideId: q.get('slide') || data.slides[0].id, format: q.get('format') || 'ig', mode: q.get('mode') || 'loop' };
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) input.mode = 'still';
+    }
+    // load every face before layout, or fit() measures the fallback font
+    await Promise.all(['400 40px Anton', '400 40px "JetBrains Mono"', '500 40px "JetBrains Mono"', '700 40px "JetBrains Mono"',
+      '400 40px Inter', '500 40px Inter', '600 40px Inter', '700 40px Inter', '800 40px Inter'].map((f) => document.fonts.load(f)));
+    await document.fonts.ready;
+    window.__MC_INFO = MC.mount(input);
+    await Promise.all([...document.images].map((i) => i.complete ? 0 : new Promise((r) => { i.onload = i.onerror = r; })));
+    await document.fonts.ready;
+    window.__MC_READY = true;
+    if (!window.__MC_INPUT && input.mode !== 'still') {
+      const t0 = performance.now();
+      const tick = () => { MC.seek(((performance.now() - t0) / 1000) % MC.duration); requestAnimationFrame(tick); };
+      tick();
+    }
+  }
+  boot();
+</script>
+</body>
+</html>
