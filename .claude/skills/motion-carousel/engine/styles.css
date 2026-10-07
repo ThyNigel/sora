@@ -114,3 +114,4 @@ body { -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; 
 .theme-light .card, .theme-vivid .card { background: #fffdf8; border: 2px solid #16130f; box-shadow: 6px 8px 0 #16130f !important; }
 .theme-light .sheet, .theme-vivid .sheet { background: #e8dfcf; border: 2px solid #16130f; box-shadow: none; }
 .theme-light .cut-letter, .theme-vivid .cut-letter { filter: none !important; }
+.claim mark, .sub mark, .body mark { background: none; color: inherit; font-weight: 800; }

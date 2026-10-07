@@ -20,7 +20,7 @@
         "TO TELL YOU"
       ],
       "accent": "7",
-      "sub": "Most take under 10 minutes. All free. Swipe.",
+      "sub": "Most take under 10 minutes. Swipe.",
       "claims": [],
       "bg": "vivid"
     },
@@ -35,12 +35,10 @@
       "figure": "4",
       "unit": "FILES",
       "claims": [
-        "Credit files most people never freeze.",
-        "Not Equifax. Not Experian. Not TransUnion.",
-        "Freezing each one costs **$0**."
+        "Files on you most people never freeze. Each freeze is **$0**."
       ],
       "claimLines": 2,
-      "body": "ChexSystems. NCTUE. Innovis. LexisNexis. One of them tracks every checking account you open.",
+      "body": "ChexSystems. NCTUE. Innovis. LexisNexis. Not the big 3. One of them tracks your checking accounts, even why one got closed.",
       "claimIds": [
         "C1",
         "C2",
@@ -124,7 +122,7 @@
         "WITH A 6-DIGIT PIN"
       ],
       "accent": "6-DIGIT",
-      "action": "IRS.gov/IPPIN. Anyone with an SSN can get one. The online tool closes *mid-November*.",
+      "action": "IRS.gov/IPPIN. Anyone with an SSN or ITIN can get one. The online tool closes *mid-November*.",
       "sourceLine": "IRS.GOV. CHECKED 07 OCT 2026",
       "proof": {
         "kind": "quotes",
@@ -165,7 +163,7 @@
         "PHONE NUMBER"
       ],
       "accent": "LOCK",
-      "action": "A SIM swap sends your bank texts to a scammer. All 3 big carriers have a *free* lock in the app.",
+      "action": "A SIM swap can send your bank texts to a scammer. All 3 big carriers have a *free* lock in the app.",
       "sourceLine": "3 CARRIER PAGES. CHECKED 07 OCT 2026",
       "proof": {
         "kind": "quotes",

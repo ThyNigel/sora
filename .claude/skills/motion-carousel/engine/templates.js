@@ -22,7 +22,7 @@
   };
   const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' })[c]);
   // **word** -> <mark>, *word* -> <em>
-  const rich = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, '<mark>$1</mark>').replace(/\*(.+?)\*/g, '<em>$1</em>');
+  const rich = (s) => esc(s).replace(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d{1,2}), (\d{4})/g, '$1&nbsp;$2,&nbsp;$3').replace(/\*\*(.+?)\*\*/g, '<mark>$1</mark>').replace(/\*(.+?)\*/g, '<em>$1</em>');
 
   // shrink font until every line fits the safe width. Never below min.
   function fit(node, maxW, min) {
@@ -215,7 +215,8 @@
         const col = el('span', 'col');
         col.style.height = size * 0.86 + 'px';
         const strip = el('span', 'strip');
-        for (let d = 0; d <= 9; d++) strip.append(el('span', '', String(d)));
+        // each digit cell is exactly one window tall so neighbours never peek in
+        for (let d = 0; d <= 9; d++) { const c = el('span', '', String(d)); c.style.height = c.style.lineHeight = size * 0.86 + 'px'; c.style.overflow = 'hidden'; strip.append(c); }
         col.append(strip);
         fig.append(col);
         cols.push({ strip, d: +ch, off: 3 + Math.floor(rnd() * 5), i: cols.length });
@@ -297,7 +298,7 @@
     } else if (proof.kind === 'ai') {
       card.innerHTML = `<div class="card-head"><span class="dom">${esc(proof.tool)}</span><span class="tag">${esc(proof.tag || 'REAL OUTPUT')}</span></div>`;
       const body = el('div', 'card-body');
-      body.innerHTML = `<div class="ai-prompt"><span class="lbl">MY PROMPT</span>${rich(proof.prompt)}</div><div class="ai-out"><span class="lbl">WHAT IT SAID</span></div>`;
+      body.innerHTML = `<div class="ai-prompt"><span class="lbl">WHAT I ASKED (SHORT VERSION)</span>${rich(proof.prompt)}</div><div class="ai-out"><span class="lbl">WHAT IT SAID</span></div>`;
       const out = body.querySelector('.ai-out');
       const lines = proof.output.map((l) => {
         const n = el('span', 'ln' + (l.startsWith('!') ? ' hl' : ''), l.replace(/^!/, '').split(' | ').map(rich).join('<span class="sep"> | </span>'));
