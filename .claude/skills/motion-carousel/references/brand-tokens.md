@@ -7,6 +7,8 @@ This lock overrides `~/.claude/design/NIGELBUILDS_DESIGN.md` (blue primary, Spac
 
 ## Look
 
+UPDATE 2026-10-07 (Nigel): backgrounds are light or vivid, never black. Default slide = cream paper #f4ede1 with ink #16130f type. Hook, stat and closing slides = vivid ember #ff5a1f with ink type and a cream accent word. Proof cards are white paper with a 2px ink border and a hard ink shadow. The concrete/smoke table below is the optional dark theme.
+
 | Token | Value | Rule |
 |---|---|---|
 | Plate | dark cracked concrete, smoke | `engine/plates.py`, never a gradient |

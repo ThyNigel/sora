@@ -55,7 +55,11 @@
     const grain = el('div', 'layer grain');
     grain.style.backgroundImage = `url('${data.assets}/plates/grain.png')`;
     const vig = el('div', 'layer vignette');
-    root.append(plate, smokeA, shade, embers, safe, grain, vig);
+    // themes: light (cream paper) and vivid (ember) by default. dark = concrete plates.
+    const theme = slide.bg || data.theme || 'light';
+    root.classList.add('theme-' + theme);
+    if (theme === 'dark') root.append(plate, smokeA, shade, embers, safe, grain, vig);
+    else root.append(safe, grain);
 
     // top bar: series label + page counter
     const bar = el('div', 'topbar');
@@ -236,7 +240,7 @@
       return n;
     });
     const body = el('div', 'body');
-    body.style.cssText = `margin-top:34px;max-width:870px;color:var(--cream-dim);font-size:${fmt.H > 1500 ? 38 : 34}px`;
+    body.style.cssText = `margin-top:34px;max-width:870px;color:var(--fg-dim, var(--cream-dim));font-size:${fmt.H > 1500 ? 38 : 34}px`;
     body.innerHTML = rich(slide.body || '');
     wrap.append(label, fig, claimWrap, body);
     f.safe.append(wrap);

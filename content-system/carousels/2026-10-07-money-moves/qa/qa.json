@@ -1,11 +1,6 @@
 [
   {
     "level": "PASS",
-    "area": "video",
-    "msg": "export/instagram/01-hook.mp4: 1080x1350 h264 yuv420p 30/1fps, 150/150 frames"
-  },
-  {
-    "level": "PASS",
     "area": "still",
     "msg": "export/instagram/01-hook.png: 1080x1350"
   },
@@ -36,11 +31,6 @@
   },
   {
     "level": "PASS",
-    "area": "video",
-    "msg": "export/instagram/07-ai-medical-bill.mp4: 1080x1350 h264 yuv420p 30/1fps, 180/180 frames"
-  },
-  {
-    "level": "PASS",
     "area": "still",
     "msg": "export/instagram/07-ai-medical-bill.png: 1080x1350"
   },
@@ -58,55 +48,5 @@
     "level": "PASS",
     "area": "still",
     "msg": "export/instagram/10-close.png: 1080x1350"
-  },
-  {
-    "level": "PASS",
-    "area": "still",
-    "msg": "export/tiktok/01-hook.png: 1080x1920"
-  },
-  {
-    "level": "PASS",
-    "area": "still",
-    "msg": "export/tiktok/02-four-files.png: 1080x1920"
-  },
-  {
-    "level": "PASS",
-    "area": "still",
-    "msg": "export/tiktok/03-freeze.png: 1080x1920"
-  },
-  {
-    "level": "PASS",
-    "area": "still",
-    "msg": "export/tiktok/04-ip-pin.png: 1080x1920"
-  },
-  {
-    "level": "PASS",
-    "area": "still",
-    "msg": "export/tiktok/05-number-lock.png: 1080x1920"
-  },
-  {
-    "level": "PASS",
-    "area": "still",
-    "msg": "export/tiktok/06-md-medical-debt.png: 1080x1920"
-  },
-  {
-    "level": "PASS",
-    "area": "still",
-    "msg": "export/tiktok/07-ai-medical-bill.png: 1080x1920"
-  },
-  {
-    "level": "PASS",
-    "area": "still",
-    "msg": "export/tiktok/08-ai-subscriptions.png: 1080x1920"
-  },
-  {
-    "level": "PASS",
-    "area": "still",
-    "msg": "export/tiktok/09-ai-lease.png: 1080x1920"
-  },
-  {
-    "level": "PASS",
-    "area": "still",
-    "msg": "export/tiktok/10-close.png: 1080x1920"
   }
 ]

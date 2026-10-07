@@ -57,7 +57,7 @@ body { -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; 
 
 .sub { font-family: var(--body); font-weight: 600; color: var(--cream); font-size: 36px; line-height: 1.3; }
 .body { font-family: var(--body); font-weight: 500; color: var(--cream); font-size: 34px; line-height: 1.32; }
-.body em { font-style: normal; color: var(--cream); border-bottom: 3px solid var(--red); }
+.body em { font-style: normal; color: inherit; border-bottom: 3px solid var(--red); }
 
 .redline { position: absolute; height: 5px; background: var(--red); transform-origin: left center; }
 .redline::after { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(90deg, transparent 0 37px, rgba(0,0,0,0.25) 37px 39px); }
@@ -99,3 +99,18 @@ body { -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; 
 .ai-out .sep { color: #b9b0a0; font-weight: 400; }
 .ai-out .ln { padding: 4px 0; border-bottom: 1.5px dashed #ece5d7; }
 .ai-out .ln:last-child { border-bottom: 0; }
+
+/* light and vivid themes (default). Background is paper, never black. */
+.frame.theme-light { --bgc: #f4ede1; --fg: #16130f; --fg-dim: rgba(22,19,15,0.68); background: var(--bgc); color: var(--fg); }
+.frame.theme-vivid { --bgc: #ff5a1f; --fg: #16130f; --fg-dim: rgba(22,19,15,0.72); background: var(--bgc); color: var(--fg); }
+.frame.theme-light .grain, .frame.theme-vivid .grain { mix-blend-mode: multiply; opacity: 0.07; }
+.theme-light .display, .theme-vivid .display, .theme-light .sub, .theme-vivid .sub,
+.theme-light .body, .theme-vivid .body, .theme-light .fig, .theme-vivid .fig { color: var(--fg); }
+.theme-light .mono, .theme-vivid .mono, .theme-light .index-list, .theme-vivid .index-list, .theme-light .nfa, .theme-vivid .nfa { color: var(--fg-dim); }
+.theme-light .mono b, .theme-vivid .mono b, .theme-light .index-list b, .theme-vivid .index-list b { color: var(--fg); }
+.theme-light .cursor, .theme-vivid .cursor { background: var(--fg); }
+.theme-vivid .accent { color: #fff6ea; }
+.theme-vivid .redline { background: var(--fg); }
+.theme-light .card, .theme-vivid .card { background: #fffdf8; border: 2px solid #16130f; box-shadow: 6px 8px 0 #16130f !important; }
+.theme-light .sheet, .theme-vivid .sheet { background: #e8dfcf; border: 2px solid #16130f; box-shadow: none; }
+.theme-light .cut-letter, .theme-vivid .cut-letter { filter: none !important; }

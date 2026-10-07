@@ -1,0 +1,66 @@
+{
+  "rendered": "2026-10-07T10:27:20.121Z",
+  "fps": 30,
+  "files": [
+    {
+      "format": "ig",
+      "slide": "hook",
+      "kind": "png",
+      "file": "export/instagram/01-hook.png"
+    },
+    {
+      "format": "ig",
+      "slide": "four-files",
+      "kind": "png",
+      "file": "export/instagram/02-four-files.png"
+    },
+    {
+      "format": "ig",
+      "slide": "freeze",
+      "kind": "png",
+      "file": "export/instagram/03-freeze.png"
+    },
+    {
+      "format": "ig",
+      "slide": "ip-pin",
+      "kind": "png",
+      "file": "export/instagram/04-ip-pin.png"
+    },
+    {
+      "format": "ig",
+      "slide": "number-lock",
+      "kind": "png",
+      "file": "export/instagram/05-number-lock.png"
+    },
+    {
+      "format": "ig",
+      "slide": "md-medical-debt",
+      "kind": "png",
+      "file": "export/instagram/06-md-medical-debt.png"
+    },
+    {
+      "format": "ig",
+      "slide": "ai-medical-bill",
+      "kind": "png",
+      "file": "export/instagram/07-ai-medical-bill.png"
+    },
+    {
+      "format": "ig",
+      "slide": "ai-subscriptions",
+      "kind": "png",
+      "file": "export/instagram/08-ai-subscriptions.png"
+    },
+    {
+      "format": "ig",
+      "slide": "ai-lease",
+      "kind": "png",
+      "file": "export/instagram/09-ai-lease.png"
+    },
+    {
+      "format": "ig",
+      "slide": "close",
+      "kind": "png",
+      "file": "export/instagram/10-close.png"
+    }
+  ]
+}

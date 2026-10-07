@@ -21,7 +21,8 @@
       ],
       "accent": "7",
       "sub": "Most take under 10 minutes. All free. Swipe.",
-      "claims": []
+      "claims": [],
+      "bg": "vivid"
     },
     {
       "id": "four-files",
@@ -46,7 +47,8 @@
         "C3",
         "C4",
         "C4a"
-      ]
+      ],
+      "bg": "vivid"
     },
     {
       "id": "freeze",
@@ -369,7 +371,9 @@
         "AI lease read"
       ],
       "nfa": "Not financial or legal advice. Just stuff I checked.",
-      "claims": []
+      "claims": [],
+      "bg": "vivid"
     }
-  ]
+  ],
+  "theme": "light"
 }

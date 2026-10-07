@@ -11,6 +11,12 @@ Makes one carousel end to end: research, proof assets, copy, motion, export, QA.
 
 The bar: it must not look or read like AI slop. Every claim is traceable. Every proof is real.
 
+## Nigel's defaults (set 2026-10-07, these win over anything below)
+
+- Backgrounds are always light (cream paper, `theme: "light"`) or vivid (ember orange, `bg: "vivid"` on hook, stat and closing slides). Never black. The dark concrete theme (`bg: "dark"`) exists but only on request.
+- Deliver individual Instagram 1080x1350 PNGs he can download and assemble himself: `render.mjs <dir> --only ig --no-video`. No TikTok renders, no MP4s unless he asks.
+- Keep it lean. Research, real proof, clean slides, QA. Skip extras.
+
 ## Read first (in this order)
 
 1. `references/brand-tokens.md` : Split World look, voice, banned words. Locked. Do not re-decide.

@@ -76,7 +76,9 @@ async function open(slideId, format, scale) {
   await page.waitForFunction(() => window.__MC_READY === true);
   return page;
 }
-for (const format of ['ig', 'tt']) {
+let QA_FORMATS = ['ig', 'tt'];
+try { const m = JSON.parse(fs.readFileSync(path.join(dir, 'export/manifest.json'), 'utf8')); QA_FORMATS = [...new Set(m.files.map((f) => f.format))]; } catch {}
+for (const format of QA_FORMATS) {
   for (const [i, s] of data.slides.entries()) {
     const page = await open(s.id, format, 1);
     const issues = await page.evaluate(() => {
@@ -148,7 +150,7 @@ else {
   const ig = man.files.filter((f) => f.format === 'ig');
   const igSlides = new Set(ig.map((f) => f.slide));
   if (igSlides.size < 8 || igSlides.size > 12) add('FAIL', 'export', `Instagram has ${igSlides.size} slides, needs 8 to 12`);
-  if (!ig.some((f) => f.kind === 'mp4') || !ig.some((f) => f.kind === 'png')) add('FAIL', 'export', 'Instagram must mix MP4 and PNG');
+  if (!ig.some((f) => f.kind === 'png')) add('FAIL', 'export', 'Instagram stills missing');
   for (const f of man.files) {
     const p = path.join(dir, f.file);
     if (!fs.existsSync(p)) { add('FAIL', 'export', `missing ${f.file}`); continue; }

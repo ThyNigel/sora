@@ -13,3 +13,4 @@
 - Both platforms cap hashtags at 5 now.
 - Anti-slop pass caught two ember elements per tip slide (title accent plus orange highlighter in the proof card). Card highlights are now red underlines, the partner color. One ember thing per frame.
 - `pkill -f render.mjs` also kills the shell running it. Kill render jobs by PID.
+- Nigel's call after the first render: too much. He wants downloadable individual PNGs, light or vivid backgrounds (no black), no TikTok renders. Those are now the defaults.
